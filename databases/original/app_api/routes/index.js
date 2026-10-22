@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const trips = require('../controllers/trips');
+const { authenticate, requireRole } = require('../middleware');
+const { validateCode, validateTrip } = require('../validation');
+const admin = [authenticate, requireRole('admin')];
+router.get('/trips', trips.tripsList);
+router.get('/trips/:tripCode', validateCode, trips.tripsFindByCode);
+router.post('/trips', ...admin, validateTrip, trips.tripsAddTrip);
+router.put('/trips/:tripCode', ...admin, validateCode, validateTrip, trips.tripsUpdateTrip);
+router.delete('/trips/:tripCode', ...admin, validateCode, trips.tripsDeleteTrip);
+module.exports = router;
