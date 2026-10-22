@@ -1,0 +1,53 @@
+<div class="container mt-4">
+
+    <h2>Add Trip</h2>
+
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+        <div class="mb-3">
+            <label>Code</label>
+            <input class="form-control" formControlName="code">
+        </div>
+
+        <div class="mb-3">
+            <label>Name</label>
+            <input class="form-control" formControlName="name">
+        </div>
+
+        <div class="mb-3">
+            <label>Length</label>
+            <input class="form-control" formControlName="length">
+        </div>
+
+        <div class="mb-3">
+            <label>Start</label>
+            <input class="form-control" formControlName="start">
+        </div>
+
+        <div class="mb-3">
+            <label>Resort</label>
+            <input class="form-control" formControlName="resort">
+        </div>
+
+        <div class="mb-3">
+            <label>Price Per Person</label>
+            <input class="form-control" formControlName="perPerson">
+        </div>
+
+        <div class="mb-3">
+            <label>Image</label>
+            <input class="form-control" formControlName="image">
+        </div>
+
+        <div class="mb-3">
+            <label>Description</label>
+            <textarea class="form-control" formControlName="description"></textarea>
+        </div>
+
+        <button class="btn btn-success">
+            Save Trip
+        </button>
+
+    </form>
+
+</div>
