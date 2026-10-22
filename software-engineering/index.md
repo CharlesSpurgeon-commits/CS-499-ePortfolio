@@ -1,0 +1,23 @@
+
+# Software Design and Engineering
+
+## Travlr Getaways — CS 499 Milestone Two
+
+This project demonstrates my ability to improve an existing full-stack application through secure software design and engineering practices.
+
+### Enhancements
+- Authentication and role-based authorization
+- Input validation and sanitization
+- Centralized API error handling
+- Secure CRUD operations
+- Improved application maintainability
+- Automated security testing
+
+### Project Files
+- [Original Application](original/)
+- [Enhanced Application](enhanced/)
+- [Enhancement Narrative](Valladares_Jordan_MilestoneTwo_Narrative.docx)
+
+[Return to ePortfolio Homepage](../)
+
+
