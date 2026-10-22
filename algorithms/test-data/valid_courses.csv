@@ -1,0 +1,5 @@
+CS100,Introduction to Computer Science
+CS200,Data Structures,CS100
+CS250,Software Engineering,CS100
+CS300,Algorithms,CS200
+CS400,Capstone,CS250,CS300
