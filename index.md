@@ -1,7 +1,6 @@
 
 ---
-layout: default
-title: CS 499 Computer Science ePortfolio
+CS 499 Computer Science ePortfolio
 ---
 
 # Computer Science ePortfolio
