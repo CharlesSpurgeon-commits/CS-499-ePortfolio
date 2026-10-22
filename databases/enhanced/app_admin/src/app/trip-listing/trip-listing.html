@@ -1,0 +1,16 @@
+<div class="container mt-3">
+  <h1>Travlr Getaways Admin</h1>
+
+  <a routerLink="/add-trip" class="btn btn-primary mb-3">
+    Add Trip
+  </a>
+
+  <div class="row">
+    <div
+      *ngFor="let trip of trips"
+      class="col-12 col-md-4 mt-3">
+
+      <app-trip-card [trip]="trip"></app-trip-card>
+    </div>
+  </div>
+</div>
